@@ -1,0 +1,298 @@
+:root{
+	font-size: 16px;
+	font-family: Georgia, serif;
+}
+
+/*I have tried to understand CSS and its concept. I have tried to vw and vh to avoid the problems of horizontal scrolling.*/
+/*I have tried to minimize the use of absolute positioning in order to make the site responsive.*/
+/*This assignment took me a little more time, because it was a little difficult to expect the behaviour of the elements initially.*/
+/*The site looks as expected on all mobile and tablet screens.*/
+
+.firstPage{
+	background-image: linear-gradient(-90deg,lightblue,white);
+	text-align: center;
+	padding-top: 40vh; 
+	height: 100vh;
+}
+
+.title{
+	font-size: 4rem;
+	font-weight: bold;
+	flex-wrap: wrap;
+}
+
+.subHeading{
+	font-size: 2rem;
+	flex-wrap: wrap;
+}
+
+.secondPage{
+	height: 100vh;
+	width: 100vw;
+	display : flex;
+	flex-direction: column; /*For a responsive layout*/
+}
+
+.secondHeadings{
+	background: royalblue;
+    width: 95vw;
+    height: 80vh;
+}
+h1#welcomeHeading{
+	background: royalblue;
+	text-align: left;
+    font-size: 4rem;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.banner{
+    background: #a0d9e2;
+    width: 85vw;
+    height: 30vh;
+    padding-left: 5vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    box-shadow: 0 0 4vw 0.5vh black;
+}
+
+h2#secondHeading{
+    font-size: 4rem;
+    padding-top: 8vh;
+    transition: box-shadow 0.3s linear 0.1s;
+    flex-wrap: wrap;
+}
+
+.paragraphs{
+    display: flex;
+    line-height: 3vh;
+    position: relative;
+
+}
+.text{
+	font-size: 1.5rem;
+    flex-wrap: wrap;
+    float:left;
+}
+.text2{
+	font-size: 1.5rem;
+	flex-wrap: wrap;
+	float:left;
+}
+.img{
+	float: right;  /*I tried adjusting my image to float right, but it didnt.*/
+	position: relative;
+	box-shadow: 0 0 18px 4px black;/*Image had the only unexpected behaviours*/
+	flex-wrap: wrap;
+	align-items: right;
+	width: 10vw;
+}
+@media only screen and (max-width: 360px)/*I have used media queries to remove Horizontal scrolling*/
+{
+	.title{
+		font-size: 2rem;
+	}
+	.subHeading{
+	font-size: 1rem;
+	flex-wrap: wrap;
+    }
+
+    h1#welcomeHeading{  /*Slight changes in padding for mobile screens and tablet screens*/
+	text-align: left;
+    font-size: 2.5rem;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }  
+
+    h2#secondHeading{
+    font-size: 2rem;  /*Different text sizes for different screens*/
+    } 
+
+    .text{
+    	font-size: 1.5rem;
+    }
+    .text2{
+    	font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px)
+{
+	.title{
+		font-size: 2rem;
+	}
+	.subHeading{
+	font-size: 1rem;
+	flex-wrap: wrap;
+    }
+    h1#welcomeHeading{
+	text-align: left;
+    font-size: 3rem;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }
+
+    h2#secondHeading{
+    font-size: 2.5rem;
+    }
+    .text{
+    	font-size: 1.5rem;
+    }
+    .text2{
+    	font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+{
+	.title{
+		font-size: 3rem;
+	}
+	.subHeading{
+	font-size: 1.5rem;
+	flex-wrap: wrap;
+    }
+    h1#welcomeHeading{
+	text-align: left;
+    font-size: 3.5rem;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }
+    h2#secondHeading{
+    font-size: 3rem;
+    }
+    .text{
+    	font-size: 1.5rem;
+    }
+    .text2{
+    	font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+	.title{
+		font-size: 5rem;
+	}
+	.subHeading{
+	font-size: 2rem;
+	flex-wrap: wrap;
+    }
+    h1#welcomeHeading{
+	text-align: left;
+    font-size: 4rem;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }
+    h2#secondHeading{
+    font-size: 4rem;
+    }
+    .paragraphs{
+    	font-size: 2rem;
+    }
+    .text{
+	font-size: 1.5rem;
+    }
+    .text2{
+    	font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px)
+{
+	.title{
+		font-size: 5rem;
+	}
+	.subHeading{
+	font-size: 2.5rem;
+	flex-wrap: wrap;
+    }
+    .secondHeadings{
+	background: royalblue;
+    width: 95vw;
+    height: 70vh;
+    }
+    h1#welcomeHeading{
+	text-align: left;
+    font-size: 4rem;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }
+    h2#secondHeading{
+    font-size: 4rem;
+    }
+    .text{
+	font-size: 2rem;
+    }
+    .text2{
+    	font-size: 2rem;
+    }
+}
+
+div#contactDets{
+	position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+a:link{
+  color:red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+    cursor: pointer;
+}
+a:active {
+    color: blue;
+}
+
+@media only screen and (min-width: 1366px){
+    .title{
+		font-size: 5rem;
+	}
+	.subHeading{
+	font-size: 2.5rem;
+	flex-wrap: wrap;
+    }
+    .secondHeadings{
+	background: royalblue;
+    width: 95vw;
+    height: 70vh;
+    }
+    h1#welcomeHeading{
+	background: royalblue;
+	text-align: left;
+    font-size: 5rem;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    }
+    h2#secondHeading{
+    font-size: 4rem;
+    }
+    .text{
+	font-size: 2rem;
+    }
+    .text2{
+    	font-size: 2rem;
+    }	
+}
