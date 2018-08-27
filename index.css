@@ -78,7 +78,7 @@ div#right {
     margin-top: 132px;/*132px*/
 }
 div#left {
-    width: 60%;
+    /*width: 60%;*/
     float: left;
 }
 .text{
@@ -133,6 +133,11 @@ div#left {
     margin: 0 10px;/*100px*/
     /*margin-top: 132px;*//*132px*/
 }
+   .img{
+    width: 80%;
+    margin-left: 5%;
+   }
+
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px)
@@ -165,13 +170,18 @@ div#left {
 
     div#left {
     /*width: 60%;*/
-    float: unset;
+    float: left;
     }
 
     div#right {
     /*float: left;*/
     width: 90%;
     margin: 0 10px;/*100px*/
+   }
+   .img{
+    width: 80%;
+    margin-left: 5%;
+   }
     
 }
 
@@ -200,6 +210,11 @@ div#left {
     }
     .text2{
         font-size: 1.5rem;
+    }
+
+    div#left {
+    width: 60%;
+    float: left;
     }
 }
 
@@ -232,6 +247,17 @@ div#left {
     .text2{
         font-size: 2rem;
     }
+    div#left {
+    width: 60%;
+    float: left;
+    }
+    .img{
+    float: right;  /*I tried adjusting my image to float right, but it didnt.*/
+    position: relative;
+    box-shadow: 0 0 18px 4px black;/*Image had the only unexpected behaviours*/
+    flex-wrap: wrap;
+    width: 30vw;
+}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px)
@@ -265,6 +291,17 @@ div#left {
     .text2{
     font-size: 2rem;
     }
+    div#left {
+    width: 60%;
+    float: left;
+    }
+    .img{
+    float: right;  /*I tried adjusting my image to float right, but it didnt.*/
+    position: relative;
+    box-shadow: 0 0 18px 4px black;/*Image had the only unexpected behaviours*/
+    flex-wrap: wrap;
+    width: 30vw;
+}
 }
 
 div#contactDets{
@@ -319,5 +356,12 @@ a:active {
     }
     .text2{
         font-size: 2rem;
-    }   
+    }
+    .img{
+    float: right;  /*I tried adjusting my image to float right, but it didnt.*/
+    position: relative;
+    box-shadow: 0 0 18px 4px black;/*Image had the only unexpected behaviours*/
+    flex-wrap: wrap;
+    width: 30vw;
+}   
 }
